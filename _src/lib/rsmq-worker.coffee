@@ -357,7 +357,7 @@ class RSMQWorker extends require( "mpbasic" )()
 			return @config.rsmq
 
 
-		if @config.redis?.constructor?.name is "RedisClient"
+		if @config.redis?.constructor?.name is "RedisClient" or @config.redis?.constructor?.name is "Redis"
 			return new RSMQ( client: @config.redis, ns: @config.redisPrefix )
 		else
 			return new RSMQ( host: @config.host, port: @config.port, options: @config.options, ns: @config.redisPrefix )
