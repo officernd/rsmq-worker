@@ -27,7 +27,7 @@
     "async": "2.1.x",
     "lodash": "4.x",
     "mpbasic": "0.0.x",
-    "rsmq": "0.7.x"
+    "rsmq": "https://github.com/petekanev/rsmq"
   },
   "devDependencies": {
     "grunt": "1.x",
